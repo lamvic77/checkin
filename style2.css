@@ -1,0 +1,60 @@
+h1 {
+
+margin-bottom: 15px;
+  text-align: center;
+font-size: 50px;
+}
+
+
+p {
+
+line-height: 1.6;
+  text-align: center;
+font-size: 30px;
+
+
+
+}
+
+
+.animals {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.animals img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.animals img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

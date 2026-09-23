@@ -1,0 +1,126 @@
+<!doctype html>
+
+<head>
+    <title>Events in Motion</title>
+    <link rel="icon" type="image/png" href="pics/star.png">
+    <link rel="stylesheet" href="style2.css" />
+</head> 
+
+<body>
+  <div class="title">
+<h1> Choose only 1!
+
+</h1>
+</div>
+
+	<p id="question">Cat or Dog?</p>
+
+<div class="animals">
+    <img 
+        src="pics/cat.jpg" 
+        id="cat" 
+        width="480"
+        onclick="changeImages()"
+    >
+
+    <img 
+        src="pics/dog.jpg" 
+        id="dog" 
+        width="480"
+        onclick="changeImages()"
+    >
+</div>
+
+<script>
+let clickCount = 0;
+
+function changeImages() {
+    clickCount++;
+
+    if (clickCount === 1) {
+        document.getElementById("cat").src = "pics/sun.jpg";
+        document.getElementById("dog").src = "pics/moon.jpg";
+        document.getElementById("question").textContent = "Sun or Moon?";
+    }
+    else if (clickCount === 2) {
+        document.getElementById("cat").src = "pics/wine.jpg";
+        document.getElementById("dog").src = "pics/beer.png";
+        document.getElementById("question").textContent = "Wine or Beer?";
+    }
+
+else if (clickCount === 3) {
+        document.getElementById("cat").src = "pics/vanilla.jpg";
+        document.getElementById("dog").src = "pics/chocolate.jpg";
+        document.getElementById("question").textContent = "Vanilla or Chocolate?";
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<style>
+.animals {
+    display: flex;
+    gap: 20px;
+}
+
+.animals img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.animals img:hover {
+    transform: scale(1.1);
+}
+</style>
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
